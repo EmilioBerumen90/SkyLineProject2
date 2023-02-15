@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">SkyLineProjectMenu</string>
+
+
+    /** ----------Coneys--------------------- */
+
+    <string name="Coneys">Coney</string>
+
+    <string name="itemsConeys">3 items</string>
+    <string name="ConeysMenu">Coney\'s \n Menu</string>
+
+    <string name="Coneys1">Cheese Coney</string>
+    <string name="Coney1Info">Skyline’s classic Cheese Coney is a specially made hot dog in a steamed bun
+        with mustard, covered with our original secret-recipe chili, diced onions and a mound of shredded cheddar cheese.</string>
+    <string name="Cost1">$2.89</string>
+
+    <string name="Coneys2">Regular Coney</string>
+    <string name="Coney2Info">Skyline’s classic  Coney is a specially made hot dog in a steamed bun
+        with mustard, covered with our original secret-recipe chili.</string>
+    <string name="Cost2">$1.89</string>
+
+    <string name="Coneys3">Chili Cheese \nSandwich</string>
+    <string name="Coney3Info">A steamed bun with our original secret-recipe chili, diced
+     onions and mustard topped with shredded cheddar cheese.</string>
+    <string name="Cost3">$4.89</string>
+
+
+    /** ----------Ways--------------------- */
+
+    <string name="Ways">Ways</string>
+    <string name="itemsWays">3 items</string>
+    <string name="WayssMenu">Ways\nMenu</string>
+    <string name="Ways1">3-Way</string>
+    <string name="Ways1Info">Our signature dish – steaming spaghetti covered with our original secret-recipe chili and topped with a mound of shredded cheddar cheese.</string>
+
+    <string name="Ways2">4-Way</string>
+    <string name="Ways2Info">A 3-Way with diced onions or beans.</string>
+
+    <string name="Ways3">5-Way</string>
+    <string name="Ways3Info">A 3-Way with diced onions or beans.</string>
+
+
+    /** ----------Bowls--------------------- */
+
+    <string name="Bowls">Bowls</string>
+    <string name="itemsBowls">2 items</string>
+    <string name="BowlssMenu">Bowls\nMenu</string>
+
+    <string name="Bowls1">Loaded Chili Bowl</string>
+    <string name="Bowls1Info">Our secret recipe chili with beans and onions topped with shredded cheddar cheese and sour cream.</string>
+
+    <string name="Bowls2">Coney Bowl</string>
+    <string name="Bowls2Info">Three of our specially made hot dogs in a bowl of our original secret-recipe chili, topped with shredded cheddar cheese. </string>
+
+
+    /** ----------Buttiros/Chilitos--------------------- */
+
+    <string name="Burritos_Chilitos">Burritos &amp; Chilitos</string>
+    <string name="itemBC">3 items</string>
+    <string name="BCsMenu">   Burritos &amp;
+        Chilito
+        Menu</string>
+
+    <string name="BC1">Original Deluxe Burrito</string>
+    <string name="BC1Info">Skyline bean mix in a tortilla, topped with our secret-recipe chili, tomatoes, lettuce, shredded cheddar cheese and sour cream</string>
+
+    <string name="BC2">Chili Deluxe Burrito</string>
+    <string name="BC2Info">Skyline Chili in a tortilla, topped with more chili,tomatoes, lettuce, shredded cheddar cheese and sour cream. </string>
+
+    <string name="BC3">Chilito</string>
+    <string name="BC3Info">Skyline Chili and shredded cheddar cheese in a tortilla. Add sour cream for additional $.30. </string>
+
+    /** -----------Wraps--------------------- */
+
+    <string name="Wraps">Wraps</string>
+    <string name="itemWraps">3 items</string>
+    <string name="WrapsMenu">Wraps \nMenu</string>
+
+    <string name="Wraps1">Chicken Bacon Ranch</string>
+    <string name="Wraps1Info">Diced chicken breast, lettuce, tomatoes, bacon, corn chips, shredded cheddar cheese and ranch dressing.</string>
+
+    <string name="Wraps2">Buffalo Chicken</string>
+    <string name="Wraps2nfo">Spicy buffalo sauce with diced chicken breast, lettuce,tomatoes, shredded cheddar cheese and ranch dressing.</string>
+
+    <string name="Wraps3">Classic Chicken</string>
+    <string name="Wraps3nfo">Diced chicken breast, lettuce, tomatoes,shredded cheddar cheese and chili ranch dressing</string>
+
+    /** -----------Fries--------------------- */
+
+    <string name="Fries">Fries</string>
+    <string name="itemFries">2 items</string>
+    <string name="FriesMenu">Fries \nMenu</string>
+
+    <string name="Fries1">Chili Cheese Fries</string>
+    <string name="Fries1Info">Crispy french fries covered with our original secret-recipe chili and shredded cheddar cheese.</string>
+
+    <string name="Fries2">Cheese Fries</string>
+    <string name="Fries2nfo">Crispy french fries covered with cheddar cheese.</string>
+
+    /** -----------Salad--------------------- */
+
+    <string name="salad">Salads</string>
+    <string name="itemsalad">3 items</string>
+    <string name="saladMenu">Salad \nMenu</string>
+
+    <string name="salad1">Greek</string>
+    <string name="salad1Info">Lettuce, cucumbers, tomatoes, Kalamata olives, pepperoncinis and feta cheese. Add Skyline’s original-recipe Greek dressing.</string>
+
+    <string name="salad2">Buffalo Chicken</string>
+    <string name="salad2Info">Spicy buffalo sauce with diced chicken breast, lettuce, tomatoes and shredded cheddar cheese. Add your choice of dressing.</string>
+
+    <string name="salad3">Garden</string>
+    <string name="salad3Info">Lettuce,cucumbers,tomato,croutons and shredded cheddar cheese.</string>
+
+
+    /** -----------Potatoes-------------------- */
+
+    <string name="Potatoes">Potatoes</string>
+    <string name="itemPotatoes">3 items</string>
+    <string name="PotatoesMenu">Potatoes \nMenu</string>
+
+
+    <string name="Potatoes1">3-Way Potato</string>
+
+    <string name="Potatoes2">Cheddar Potato</string>
+
+    <string name="Potatoes3">Sour Cream Potato</string>
+
+
+    /** -----------Kids's Meal-------------------- */
+
+    <string name="KidsMeal">Kids Menu</string>
+    <string name="itemKids">4 items</string>
+    <string name="KidsMenu">Kids \nMenu</string>
+
+
+    <string name="Kids1">Kids 3-Way</string>
+    <string name="Kids1Info">A small 3-Way</string>
+
+    <string name="kids2">Kids spaghetti</string>
+    <string name="Kids2Info">A small dish of our spaghetti topped with shredded cheddar cheese. </string>
+
+    <string name="Kids3">Kids Coney</string>
+    <string name="Kids3Info">Our famous Chili Coney with or without cheese.</string>
+
+    <string name="Kids4">Kids Hot Doggy</string>
+    <string name="Kids4Info">Two of our delicious hot dogs in one freshly steamed bun, with or without cheese.</string>
+
+
+    /** -----------Desserts-------------------- */
+
+    <string name="Desserts">Desserts</string>
+    <string name="itemDesserts">1 items</string>
+    <string name="DessertsMenu">Dessert \nMenu</string>
+    <string name="Dessert1">Funnel Fries</string>
+
+    /** -----------Desserts-------------------- */
+
+    <string name="Beverages">Beverages</string>
+    <string name="itemBeverages">13 items</string>
+    <string name="BeveragesMenu">Beverages</string>
+    <string name="Beverages1">Soft Drink</string>
+    <string name="Beverages1Ingo">Pepsi</string>
+
+
+    <string name="ChickenTenders">Chicken Tenders</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+
+
+</resources>

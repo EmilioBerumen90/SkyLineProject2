@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConeysMenu">
+
+    <RelativeLayout
+        android:id="@+id/col_left_coneys_menu"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:id="@+id/scroll_coneys_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <RelativeLayout
+                android:id="@+id/row_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_coneys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/BCsMenu"
+                    android:textColor="@color/ColorWhite"
+                    android:textSize="40sp" />
+
+            </RelativeLayout>
+
+            /**  ----------Original Deluxe Burrito--------------------- */
+
+            <RelativeLayout
+                android:id="@+id/row_BC_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_BC_1"
+                    android:layout_width="300dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_height="210dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp"
+                    app:cardBackgroundColor="@color/ColorWhite">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_BC1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginStart="70dp"
+                            android:text="@string/BC1"
+                            android:textSize="30sp"
+                            android:textColor="@color/ColorAccent"/>
+                        <TextView
+                            android:id="@+id/tv_info_BC_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_BC1"
+                            android:layout_marginStart="80dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/purple_500"/>
+
+                        <RatingBar
+                            android:id="@+id/rating_BC_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+                            android:progressTint="@color/ColorYellow"
+                            android:layout_below="@+id/tv_info_BC_1"
+                            android:layout_marginLeft="80dp"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator" />
+
+
+
+                        <TextView
+                            android:id="@+id/rating_price_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rating_BC_1"
+                            android:layout_marginLeft="80dp"
+                            android:text="@string/Cost1"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_BC1"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/burritoimg"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_BC_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/ColorWhite"
+                    app:backgroundTint="@color/ColorWhite"
+                    android:src="@drawable/ic_baseline_add_24"/>
+
+            </RelativeLayout>
+
+            /**  --------------Chili Deluxe BURRITO----------------- */
+
+            <RelativeLayout
+                android:id="@+id/row_BC_BC1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_BC_2"
+                    android:layout_width="300dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="210dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp"
+                    app:cardBackgroundColor="@color/ColorWhite">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_BC2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginStart="70dp"
+                            android:text="@string/BC2"
+                            android:textSize="30sp"
+                            android:textColor="@color/ColorAccent"/>
+                        <TextView
+                            android:id="@+id/tv_infoBC_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_BC2"
+                            android:layout_marginStart="80dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/purple_500"/>
+
+                        <RatingBar
+                            android:id="@+id/rating_BC_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+                            android:progressTint="@color/ColorYellow"
+                            android:layout_below="@+id/tv_infoBC_2"
+                            android:layout_marginLeft="80dp"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator" />
+
+
+
+                        <TextView
+                            android:id="@+id/rating_price_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rating_BC_2"
+                            android:layout_marginLeft="80dp"
+                            android:text="@string/Cost2"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_BC2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/burritoimg"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_BC_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/ColorWhite"
+                    app:backgroundTint="@color/ColorWhite"
+                    android:src="@drawable/ic_baseline_add_24"/>
+
+            </RelativeLayout>
+
+
+            /**  -------------Chilito----------------- */
+
+            <RelativeLayout
+                android:id="@+id/row_coney_BC2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_BC_3"
+                    android:layout_width="300dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="210dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp"
+                    app:cardBackgroundColor="@color/ColorWhite">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_BC3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginStart="70dp"
+                            android:text="@string/BC3"
+                            android:textSize="30sp"
+                            android:textColor="@color/ColorAccent"/>
+                        <TextView
+                            android:id="@+id/tv_infoBC_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_BC3"
+                            android:layout_marginStart="80dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/purple_500"/>
+
+                        <RatingBar
+                            android:id="@+id/rating_BC_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+                            android:progressTint="@color/ColorYellow"
+                            android:layout_below="@+id/tv_infoBC_3"
+                            android:layout_marginLeft="80dp"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator" />
+
+
+
+                        <TextView
+                            android:id="@+id/rating_price_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rating_BC_3"
+                            android:layout_marginLeft="80dp"
+                            android:text="@string/Cost2"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_BC3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/chilitoimg"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_BC_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/ColorWhite"
+                    app:backgroundTint="@color/ColorWhite"
+                    android:src="@drawable/ic_baseline_add_24"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/col_left"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            /**  ----------Coneys--------------------- */
+            <RelativeLayout
+                android:id="@+id/row_coney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_coney"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_coneys"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/Coneys"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp"
+                            android:layout_marginTop="16dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_coneys_items"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemsConeys"
+                            android:textSize="16sp"
+                            android:textColor="@color/ColorGrey"
+                            android:layout_below="@+id/tv_coneys"
+                            android:layout_marginStart="80dp"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_coney"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/coneyimg"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_coney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+            </RelativeLayout>
+            /**  ----------Ways--------------------- */
+            <RelativeLayout
+                android:id="@+id/row_ways"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_ways"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_ways"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/Ways"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp"
+                            android:layout_marginTop="16dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_ways_items"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemsWays"
+                            android:textSize="16sp"
+                            android:textColor="@color/ColorGrey"
+                            android:layout_below="@+id/tv_ways"
+                            android:layout_marginLeft="80dp"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_ways"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/waysimg"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_ways"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+            </RelativeLayout>
+            /**  ----------Bowls--------------------- */
+            <RelativeLayout
+                android:id="@+id/row_bowls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_bowls"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_bowls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/Bowls"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tv_ways_bowls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_bowls"
+                            android:layout_marginLeft="80dp"
+                            android:text="@string/itemsWays"
+                            android:textColor="@color/ColorGrey"
+                            android:textSize="16sp" />
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_bowls"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bowlsimg"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_bowl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+            </RelativeLayout>
+            /** ----------BurritoChilito------------ */
+            <RelativeLayout
+                android:id="@+id/row_BC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_BC"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_BC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/Burritos_Chilitos"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/tv_ways_bc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_BC"
+                            android:layout_marginLeft="80dp"
+                            android:text="@string/itemsWays"
+                            android:textColor="@color/ColorGrey"
+                            android:textSize="16sp" />
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_BC"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/burritoimg" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_BC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:minHeight="10dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+            </RelativeLayout>
+            /** ----------Warps--------------------- */
+            <RelativeLayout
+                android:id="@+id/row_Wraps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_Wraps"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_Wraps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/Wraps"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tv_Wraps_bc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_Wraps"
+                            android:layout_marginStart="80dp"
+                            android:text="@string/itemWraps"
+                            android:textColor="@color/ColorGrey"
+                            android:textSize="16sp" />
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_Wraps"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="TODO"
+                    android:elevation="2dp"
+                    android:src="@drawable/wrapsimg" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_wraps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/todo2"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </RelativeLayout>
+            /** ----------Fries--------------------- */
+            <RelativeLayout
+                android:id="@+id/row_Fries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_Fries"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_Fries"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/Fries"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tv_Fries_bc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_Fries"
+                            android:layout_marginStart="80dp"
+                            android:text="@string/itemFries"
+                            android:textColor="@color/ColorGrey"
+                            android:textSize="16sp" />
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_Fries"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="TODO"
+                    android:elevation="2dp"
+                    android:src="@drawable/friesimg" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_fries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/todo2"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </RelativeLayout>
+
+
+            /**  ----------Salads -------------------- */
+            <RelativeLayout
+                android:id="@+id/row_Salads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_Salads"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_Salads"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/salad"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp"
+                            android:layout_marginTop="16dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_Salads_bc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemsalad"
+                            android:textSize="16sp"
+                            android:textColor="@color/ColorGrey"
+                            android:layout_below="@+id/tv_Salads"
+                            android:layout_marginStart="80dp"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_Salads"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/saladimg"
+                    android:contentDescription="@string/todo1" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_Salads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:contentDescription="@string/todo" />
+
+            </RelativeLayout>
+            /**  ----------Potatoes -------------------- */
+            <RelativeLayout
+                android:id="@+id/row_Potatoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_Potatoes"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_Potatoes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/Potatoes"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp"
+                            android:layout_marginTop="16dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_Potatoes_bc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemPotatoes"
+                            android:textSize="16sp"
+                            android:textColor="@color/ColorGrey"
+                            android:layout_below="@+id/tv_Potatoes"
+                            android:layout_marginStart="80dp"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_Potatoes"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/potatoesimg"
+                    android:contentDescription="@string/todo1" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_Potatoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:contentDescription="@string/todo" />
+
+            </RelativeLayout>
+            /**  ----------Kids's Meal -------------------- */
+            <RelativeLayout
+                android:id="@+id/row_Kids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_Kids"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_Kids"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/KidsMeal"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp"
+                            android:layout_marginTop="16dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_Kids_bc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemKids"
+                            android:textSize="16sp"
+                            android:textColor="@color/ColorGrey"
+                            android:layout_below="@+id/tv_Kids"
+                            android:layout_marginStart="80dp"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_Kids"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/kidsmenuimg"
+                    android:contentDescription="@string/todo1" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_kids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:contentDescription="@string/todo" />
+
+            </RelativeLayout>
+            /**  ----------Desserts Meal -------------------- */
+            <RelativeLayout
+                android:id="@+id/row_Dessert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_Dessert"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_Dessert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/Desserts"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp"
+                            android:layout_marginTop="16dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_Dessert_bc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemDesserts"
+                            android:textSize="16sp"
+                            android:textColor="@color/ColorGrey"
+                            android:layout_below="@+id/tv_Dessert"
+                            android:layout_marginStart="80dp"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_Dessert"
+                    android:layout_width="156dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="@string/todo1"
+                    android:elevation="2dp"
+                    android:src="@drawable/desertimg" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_Dessert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:contentDescription="@string/todo" />
+
+            </RelativeLayout>
+            /**  -----------Beverages-------------------- */
+            <RelativeLayout
+                android:id="@+id/row_Beverages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_Beverages"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/ColorWhite"
+                    app:cardCornerRadius="40dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_Beverages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/Beverages"
+                            android:textColor="@color/ColorAccent"
+                            android:textSize="30sp"
+                            android:layout_marginTop="16dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_Beverages_bc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/itemBeverages"
+                            android:textSize="16sp"
+                            android:textColor="@color/ColorGrey"
+                            android:layout_below="@+id/tv_Beverages"
+                            android:layout_marginStart="80dp"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_Beverages"
+                    android:layout_width="156dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="@string/todo1"
+                    android:elevation="2dp"
+                    android:src="@drawable/beveragesimg" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_Beverages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:backgroundTint="@color/ColorWhite"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:contentDescription="@string/todo" />
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConeysMenu">
+
+    <RelativeLayout
+        android:id="@+id/col_left_potatoes_menu"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:id="@+id/scroll_potatoes_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <RelativeLayout
+                android:id="@+id/row_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_potatoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PotatoesMenu"
+                    android:textSize="40sp"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/ColorWhite" />
+
+            </RelativeLayout>
+
+            /**  ------------3-Way Potatoes--------------------- */
+
+            <RelativeLayout
+                android:id="@+id/row_potatoes_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_potatoes_1"
+                    android:layout_width="300dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_height="190dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp"
+                    app:cardBackgroundColor="@color/ColorWhite">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_potatoes1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginStart="70dp"
+                            android:text="@string/Potatoes1"
+                            android:textSize="30sp"
+                            android:textColor="@color/ColorAccent"/>
+                        <TextView
+                            android:id="@+id/tv_info_potatoes_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_potatoes1"
+                            android:layout_marginStart="80dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/purple_500"/>
+
+                        <RatingBar
+                            android:id="@+id/rating_potatoes_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+                            android:progressTint="@color/ColorYellow"
+                            android:layout_below="@+id/tv_info_potatoes_1"
+                            android:layout_marginLeft="80dp"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator" />
+
+
+
+                        <TextView
+                            android:id="@+id/rating_price_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rating_potatoes_1"
+                            android:layout_marginLeft="80dp"
+                            android:text="@string/Cost1"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_potatoes1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/potatoesimg"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_potatoes_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/ColorWhite"
+                    app:backgroundTint="@color/ColorWhite"
+                    android:src="@drawable/ic_baseline_add_24"/>
+
+            </RelativeLayout>
+
+            /**  ------------Cheddar Potato--------------------- */
+
+            <RelativeLayout
+                android:id="@+id/row_potatoes_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_potatoes_2"
+                    android:layout_width="300dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="190dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp"
+                    app:cardBackgroundColor="@color/ColorWhite">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_potatoes2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginStart="70dp"
+                            android:text="@string/Potatoes2"
+                            android:textSize="30sp"
+                            android:textColor="@color/ColorAccent"/>
+                        <TextView
+                            android:id="@+id/tv_info_potatoes_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_potatoes2"
+                            android:layout_marginStart="80dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/purple_500"/>
+
+                        <RatingBar
+                            android:id="@+id/rating_potatoes_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+                            android:progressTint="@color/ColorYellow"
+                            android:layout_below="@+id/tv_info_potatoes_2"
+                            android:layout_marginLeft="80dp"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator" />
+
+
+
+                        <TextView
+                            android:id="@+id/rating_price_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rating_potatoes_2"
+                            android:layout_marginLeft="80dp"
+                            android:text="@string/Cost2"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_potatoes2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/potatoesimg"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_potatoes_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/ColorWhite"
+                    app:backgroundTint="@color/ColorWhite"
+                    android:src="@drawable/ic_baseline_add_24"/>
+
+            </RelativeLayout>
+
+
+            /**  ------------Sour Cream  Potato--------------------- */
+
+            <RelativeLayout
+                android:id="@+id/row_potatoes_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_potatoes_3"
+                    android:layout_width="300dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="190dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp"
+                    app:cardBackgroundColor="@color/ColorWhite">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_potatoes3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginStart="70dp"
+                            android:text="@string/Potatoes3"
+                            android:textSize="30sp"
+                            android:textColor="@color/ColorAccent"/>
+                        <TextView
+                            android:id="@+id/tv_info_potatoes_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_potatoes3"
+                            android:layout_marginStart="80dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/purple_500"/>
+
+                        <RatingBar
+                            android:id="@+id/rating_potatoes_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+                            android:progressTint="@color/ColorYellow"
+                            android:layout_below="@+id/tv_info_potatoes_3"
+                            android:layout_marginLeft="80dp"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator" />
+
+
+
+                        <TextView
+                            android:id="@+id/rating_price_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rating_potatoes_3"
+                            android:layout_marginLeft="80dp"
+                            android:text="@string/Cost2"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"/>
+
+
+
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/image_potatoes3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/potatoesimg"
+                    android:elevation="2dp"
+                    android:layout_margin="16dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_potatoes_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/ColorWhite"
+                    app:backgroundTint="@color/ColorWhite"
+                    android:src="@drawable/ic_baseline_add_24"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

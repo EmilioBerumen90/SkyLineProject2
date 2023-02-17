@@ -169,4 +169,15 @@
     <string name="todo2">TODO</string>
 
 
+    /** -----------Login and Registration-------------------- */
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="enter">Enter</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="log_out">Log Out</string>
+
+
 </resources>

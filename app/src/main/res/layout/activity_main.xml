@@ -26,7 +26,17 @@
             android:orientation="vertical"
             tools:ignore="ExtraText">
 
+            <Button
+                android:id="@+id/LogOut"
+                android:text="@string/log_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
             /**  ----------Coneys--------------------- */
+
+
             <RelativeLayout
                 android:id="@+id/row_coney"
                 android:layout_width="match_parent"
@@ -77,9 +87,12 @@
                     android:id="@+id/image_coney"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/coneyimg"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
                     android:elevation="2dp"
-                    android:layout_margin="16dp" />
+                    android:src="@drawable/coneyimg" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/fab_coney"

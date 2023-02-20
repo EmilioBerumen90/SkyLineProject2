@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".log"
+    android:background="@color/purple_500">
+
+    <ImageView
+        android:id="@+id/skylineimage"
+        android:layout_width="1000dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-130dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="6dp"
+        android:src="@drawable/skylinetime" />
+
+
+   <Button
+        android:id="@+id/btn_menu"
+        android:text="@string/menu"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/ColorWhite"
+        />
+    <Button
+        android:id="@+id/btn_rewards"
+        android:text="@string/rewards"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/ColorWhite"
+        />
+    <Button
+        android:id="@+id/btn_appointment"
+        android:text="@string/look_your_appointments"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/ColorWhite"
+        />
+    <Button
+        android:id="@+id/btn_geolocation"
+        android:text="@string/restaurants_near_me"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/ColorWhite"
+        />
+
+
+
+
+
+
+
+
+</LinearLayout>

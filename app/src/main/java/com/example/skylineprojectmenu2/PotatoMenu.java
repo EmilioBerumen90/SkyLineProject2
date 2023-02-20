@@ -1,5 +1,6 @@
 package com.example.skylineprojectmenu2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -27,6 +28,8 @@ public class PotatoMenu extends AppCompatActivity implements View.OnClickListene
     TextView tvInfopotato3;
     boolean flag3 = true;
 
+    FloatingActionButton HomeBTN;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +51,9 @@ public class PotatoMenu extends AppCompatActivity implements View.OnClickListene
         fabpotato3.setOnClickListener(this);
 
         init();
+
+        HomeBTN = findViewById(R.id.fab_home);
+        HomeBTN.setOnClickListener(this);
 
     }
 
@@ -113,6 +119,12 @@ public class PotatoMenu extends AppCompatActivity implements View.OnClickListene
                 }
 
                 break;
+
+            case R.id.fab_home:
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+                break;
+
 
         }
     }

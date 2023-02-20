@@ -29,6 +29,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="70dp"
+                    android:backgroundTint="@color/ColorWhite"
+                    app:backgroundTint="@color/ColorWhite"
+                    android:src="@drawable/ic_baseline_home_24"
+                    android:layout_marginTop="35dp"
+                   />
+
                 <TextView
                     android:id="@+id/tv_coneys"
                     android:layout_width="wrap_content"

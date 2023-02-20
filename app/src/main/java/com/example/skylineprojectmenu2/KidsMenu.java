@@ -1,5 +1,6 @@
 package com.example.skylineprojectmenu2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -32,6 +33,8 @@ public class KidsMenu extends AppCompatActivity implements View.OnClickListener 
     TextView tvInfokids4;
     boolean flag4 = true;
 
+    FloatingActionButton HomeBTN;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,9 @@ public class KidsMenu extends AppCompatActivity implements View.OnClickListener 
         fabkids4.setOnClickListener(this);
 
         init();
+
+        HomeBTN = findViewById(R.id.fab_home);
+        HomeBTN.setOnClickListener(this);
 
     }
 
@@ -143,6 +149,11 @@ public class KidsMenu extends AppCompatActivity implements View.OnClickListener 
                 tvInfokids4.setVisibility(View.GONE);
             }
             break;
+
+            case R.id.fab_home:
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+                break;
 
         }
     }

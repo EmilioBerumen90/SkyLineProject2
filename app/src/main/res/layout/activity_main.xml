@@ -164,7 +164,7 @@
                     tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
 
             </RelativeLayout>
-            /**  ----------Bowls--------------------- */
+            /** ----------Bowls--------------------- */
             <RelativeLayout
                 android:id="@+id/row_bowls"
                 android:layout_width="match_parent"
@@ -177,7 +177,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_margin="16dp"
                     app:cardBackgroundColor="@color/ColorWhite"
-                    app:cardCornerRadius="40dp" >
+                    app:cardCornerRadius="40dp">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -213,9 +213,9 @@
                     android:id="@+id/image_bowls"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/bowlsimg"
+                    android:layout_margin="16dp"
                     android:elevation="2dp"
-                    android:layout_margin="16dp" />
+                    android:src="@drawable/bowlsimg" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/fab_bowl"
@@ -444,8 +444,6 @@
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </RelativeLayout>
-
-
             /**  ----------Salads -------------------- */
             <RelativeLayout
                 android:id="@+id/row_Salads"
@@ -497,9 +495,9 @@
                     android:id="@+id/image_Salads"
                     android:layout_width="140dp"
                     android:layout_height="130dp"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="15dp"
                     android:elevation="2dp"
                     android:src="@drawable/saladimg"
@@ -570,13 +568,13 @@
                     android:id="@+id/image_Potatoes"
                     android:layout_width="140dp"
                     android:layout_height="130dp"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginBottom="15dp"
+                    android:contentDescription="@string/todo1"
                     android:elevation="2dp"
-                    android:src="@drawable/potatoesimg"
-                    android:contentDescription="@string/todo1" />
+                    android:src="@drawable/potatoesimg" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/fab_Potatoes"

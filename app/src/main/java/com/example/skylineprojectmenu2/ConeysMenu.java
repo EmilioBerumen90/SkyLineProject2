@@ -1,5 +1,6 @@
 package com.example.skylineprojectmenu2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -28,6 +29,8 @@ public class ConeysMenu extends AppCompatActivity implements View.OnClickListene
     boolean flag3 = true;
 
 
+    FloatingActionButton HomeBTN;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +53,9 @@ public class ConeysMenu extends AppCompatActivity implements View.OnClickListene
         fabConey3.setOnClickListener(this);
 
         init();
+
+        HomeBTN = findViewById(R.id.fab_home);
+        HomeBTN.setOnClickListener(this);
 
     }
 
@@ -120,6 +126,17 @@ public class ConeysMenu extends AppCompatActivity implements View.OnClickListene
 
                 break;
 
+            case R.id.fab_home:
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+                break;
+
+
         }
+
+
+
+
+
     }
 }

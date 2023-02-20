@@ -1,5 +1,6 @@
 package com.example.skylineprojectmenu2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -27,6 +28,7 @@ public class BurritosMenu extends AppCompatActivity implements View.OnClickListe
     TextView tvInfoBC3;
     boolean flag3 = true;
 
+    FloatingActionButton HomeBTN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,9 @@ public class BurritosMenu extends AppCompatActivity implements View.OnClickListe
         fabBC3.setOnClickListener(this);
 
         init();
+
+        HomeBTN = findViewById(R.id.fab_home);
+        HomeBTN.setOnClickListener(this);
 
     }
 
@@ -116,6 +121,11 @@ public class BurritosMenu extends AppCompatActivity implements View.OnClickListe
                 tvInfoBC3.setVisibility(View.GONE);
             }
 
+                break;
+
+            case R.id.fab_home:
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
                 break;
 
         }

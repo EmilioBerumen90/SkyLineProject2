@@ -1,5 +1,6 @@
 package com.example.skylineprojectmenu2;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     FloatingActionButton fabWay;
 
     FloatingActionButton fabBowl;
+
+    FloatingActionButton fabFries;
 
     FloatingActionButton fabBC;
 
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         fabConey = findViewById(R.id.fab_coney);
         fabConey.setOnClickListener(this);
 
@@ -60,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         fabDessert= findViewById(R.id.fab_Dessert);
         fabDessert.setOnClickListener(this);
+
+        fabFries = findViewById(R.id.fab_fries);
+        fabFries.setOnClickListener(this);
 
     }
 
@@ -108,6 +115,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(menudessert);
     }
 
+    public void screenMenuFries(){
+        Intent menufries = new Intent(this,FriesMenu.class);
+        startActivity(menufries);
+    }
+
 
     @Override
     public void onClick(View v){
@@ -146,6 +158,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.fab_Dessert:
                 screenMenuDessert();
+                break;
+
+            case R.id.fab_fries:
+                screenMenuFries();
                 break;
 
         }

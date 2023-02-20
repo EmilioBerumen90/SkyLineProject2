@@ -1,5 +1,6 @@
 package com.example.skylineprojectmenu2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -22,6 +23,8 @@ public class FriesMenu extends AppCompatActivity implements View.OnClickListener
     TextView tvInfoFries2;
     boolean flag2 = true;
 
+    FloatingActionButton HomeBTN;
+
 
 
     @Override
@@ -38,9 +41,10 @@ public class FriesMenu extends AppCompatActivity implements View.OnClickListener
         tvInfoFries2 = findViewById(R.id.tv_info_fries_2);
         fabFries2.setOnClickListener(this);
 
-
-
         init();
+
+        HomeBTN = findViewById(R.id.fab_home);
+        HomeBTN.setOnClickListener(this);
 
     }
 
@@ -91,6 +95,10 @@ public class FriesMenu extends AppCompatActivity implements View.OnClickListener
 
                 break;
 
+            case R.id.fab_home:
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+                break;
 
         }
     }

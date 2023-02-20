@@ -1,5 +1,6 @@
 package com.example.skylineprojectmenu2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -17,6 +18,8 @@ public class DessertMenu extends AppCompatActivity implements View.OnClickListen
     TextView tvInfoDessert1;
     boolean flag = true;
 
+    FloatingActionButton HomeBTN;
+
 
 
 
@@ -32,6 +35,9 @@ public class DessertMenu extends AppCompatActivity implements View.OnClickListen
 
 
         init();
+
+        HomeBTN = findViewById(R.id.fab_home);
+        HomeBTN.setOnClickListener(this);
 
     }
 
@@ -60,6 +66,11 @@ public class DessertMenu extends AppCompatActivity implements View.OnClickListen
                     cardDessert1.setLayoutParams((layoutParams));
                     tvInfoDessert1.setVisibility(View.GONE);
                 }
+                break;
+
+            case R.id.fab_home:
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
                 break;
 
 

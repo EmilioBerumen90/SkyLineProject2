@@ -26,6 +26,20 @@
             android:orientation="vertical"
             tools:ignore="ExtraText">
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_baseline_home_24"
+                app:backgroundTint="@color/ColorWhite"
+                app:tint="@color/colorPrimary"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
             /**  ----------Coneys--------------------- */
             <RelativeLayout
                 android:id="@+id/row_coney"

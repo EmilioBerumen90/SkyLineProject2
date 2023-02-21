@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     FloatingActionButton fabDessert;
 
+    FloatingActionButton HomeBTN;
 
 
     @Override
@@ -67,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         fabFries = findViewById(R.id.fab_fries);
         fabFries.setOnClickListener(this);
+
+        HomeBTN = findViewById(R.id.fab_Home);
+        HomeBTN.setOnClickListener(this);
 
     }
 
@@ -162,6 +166,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.fab_fries:
                 screenMenuFries();
+                break;
+
+            case R.id.fab_Home:
+                Intent intent = new Intent(getApplicationContext(),MainMenu.class);
+                startActivity(intent);
                 break;
 
         }
